@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "ms-azuretools.vscode-azurefunctions",
+    "ms-vscode.powershell",
+    "pspester.pester-test",
+    "rvest.vs-code-prettier-eslint",
+  ]
+}
