@@ -1,0 +1,38 @@
+{
+  "version": "2.0",
+  "extensions": {
+    "http": {
+      "customHeaders": {},
+      "dynamicThrottlesEnabled": true,
+      "hsts": {
+        "isEnabled": true,
+        "maxAge": "10"
+      },
+      "maxConcurrentRequests": 100,
+      "maxOutstandingRequests": 200,
+      "routePrefix": "api"
+    }
+  },
+  "extensionBundle": {
+    "id": "Microsoft.Azure.Functions.ExtensionBundle",
+    "version": "[4.0.0, 5.0.0)"
+  },
+  "healthMonitor": {
+    "enabled": true
+  },
+  "logging": {
+    "fileLoggingMode": "never",
+    "logLevel": {
+      "default": "Trace"
+    },
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": true,
+        "excludedTypes": "Request"
+      }
+    }
+  },
+  "managedDependency": {
+    "enabled": true
+  }
+}
